@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Store</title>
+   <style>
+    *{
+        box-sizing: border-box; margin: 0; padding: 0;
+    }
+    body{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background: skyblue;
+    }
+    header{
+        background: white;
+        color: black;
+        padding: 15px 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top:0;
+        z-index: 10;
+
+    }
+    header a{
+        color: hotpink;
+        text-decoration: underline;
+        margin: 40px;
+        font-size: 18px;
+
+    }
+    h1{
+        text-align: center;
+        
+       
+    }
+    .product-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr); gap: 20px;padding: 0 10% 50px 10%;
+    }
+    .card{
+        background: whitesmoke;
+        border: 20px;
+        padding: 30px;
+        text-align: center;
+        transition: transform 0.3s ease;
+
+    }
+    .card:hover{
+        transform: translateY(-10px) scale(1.2);
+    }
+    .card img{
+        width: 100%; height:150px; object-fit: contain;
+    }
+    .buy-btn{
+        display: inline-block;
+        padding: 10px 10%;
+        background: gray;
+        color: hotpink;
+        text-decoration: none;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+   </style>
+</head>
+<body>
+    <header>
+        <a href="project_2.html">Home</a>
+        <nav>
+            <a href="https://jenniferjohn-charleston.com/collections/womens-shoes"> Shoes</a>
+             <a href="https://www.zara.com/us/en/woman-tops-l1322.html?v1=2419940&regionGroupId=14"> Shirts</a>
+              <a href="https://www.shopcider.com/category/maxi-skirts-cid-8285?link_url=https%3A%2F%2Fwww.shopcider.com%2Fcategory%2Fmaxi-skirts-cid-8285&operationpage_title=product_detail&operation_position=1-0-2-2&operation_type=category&operation_content=Maxi%20Skirts&operation_image=&operation_update_time=1776994721362"> Skirts</a>
+               <a href="https://oldnavy.gap.com/browse/women/pants?cid=5475&nav=hamnav%3AWomen%3AWomen%27s%20Bottoms%3APants"> Pants</a>
+                <a href="https://us.ohpolly.com/collections/dresses"> Dresses</a>
+                 <a href="https://www.fashionnova.com/search?query=denim+shorts&division=women"> Shorts</a>
+        </nav>
+        </nav>
+        </nav>
+    </header>
+    <h1> Welcome to Tady's & Company</h1>
+    <div>
+        <div class="product-grid">
+            <div class="card"> <img src="pictures/pants.jpeg"><h3>Pants</h3> <a href="#" class="buy-btn">Buy</a></div>
+            <div class="card"> <img src="pictures/shirts.webp"><h3>Shirts</h3><a href="#" class="buy-btn">Buy</a></div>
+            <div class="card" > <img src="pictures/skirt.webp"><h3>Skirts</h3><a href="#" class="buy-btn">Buy</a></div>
+           <div class="card"> <img src="pictures/shoes.jpg"><h3>Shoes</h3><a href="#" class="buy-btn">Buy</a></div>
+            <div class="card"> <img src="pictures/shorts.webp"><h3>Shorts</h3><a href="#" class="buy-btn">Buy</a></div>
+            <div class="card"> <img src="pictures/dresses.webp"><h3>Dresses</h3><a href="#" class="buy-btn">Buy</a></div>
+           
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>
